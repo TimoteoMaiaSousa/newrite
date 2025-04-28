@@ -2,6 +2,7 @@
 *{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(255, 255, 255);
+    transition: 0.8s;
 }
 a{
     text-decoration: none;
@@ -28,9 +29,8 @@ body{
         right: 0;
         left: 0;
         z-index: 1;
-        background-color: rgb(95, 95, 255);
+        background-color: #16B4F2;
         box-shadow: 2px 2px 2px rgba(2, 2, 24, 0.678);
-        justify-content: center;
     }
     #menu{
         position: absolute;
@@ -46,7 +46,7 @@ body{
     }
     #menu:hover{
         cursor: pointer;
-        background-color: rgba(255, 255, 255, 0.637);
+        background-color: #2070c0;
         border-radius: 7px;
         border-bottom-left-radius: 0;
         transition: 0.8s;
@@ -65,21 +65,23 @@ body{
     }
     #exit{
         position: absolute;
-        width: 100px;
-        height: 30px;
+        width: 120px;
+        height: 20px;
+        padding: 5px;
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: rgb(87, 87, 230);
+        box-shadow: 3px 3px 3px rgba(37, 37, 95, 0.884);
+        background-color: #2d91de;
         margin-top: 120px;
-        border-top-right-radius: 50px;
+        border-top-right-radius: 5px;
         transition: 1s;
         left: 0;
     }
     #exit:hover{
         cursor: pointer;
-        background-color: rgba(240, 248, 255, 0.644);
-        width: 30px;
+        background-color: #2d91de;
+        width: 20px;
         border-radius: 7px;
         border-bottom-left-radius: 0;
         transition: 0.8s;
@@ -91,6 +93,7 @@ body{
         height: 3px;
         background-color: rgba(0, 0, 0, 0.747);
         border-radius: 50px;
+        transition: 0.8s;
     }
     #e1{
         transform: rotate(45deg);
@@ -106,9 +109,9 @@ body{
         justify-content: center;
         align-items: center;
         box-shadow: 3px 3px 3px rgba(37, 37, 95, 0.884);
-        border-top-right-radius: 30px;
-        background-color: rgb(87, 87, 230);
-        margin-top: 150px;
+        background-color: #2d91de;
+        margin-top: 145px;
+        border-radius: 5px;
         padding-bottom: 30px;
         left: 0;
     }
@@ -116,21 +119,22 @@ body{
         margin-top: 10px;
         color: aliceblue;
         text-decoration: none;
-        background-color: rgb(95, 95, 255);
+        background-color: #2d91de;
         padding: 3px;
         border-radius: 5px;
         transition: 0.5s;
     }
     #menuopcs>a:hover{
-        background-color: rgba(240, 248, 255, 0.486);
+        background-color: #16B4F2;
         padding: 5px;
         transition: 0.5s;
+        text-decoration: underline;
     }
     #signin{
         font-size: 10pt;
         position: absolute;
         right: 0;
-        background-image: linear-gradient(40deg,#58787a6b,#54B4BD,#23E8FA);
+        background-color: #5ac8f3;
         border-radius: 10px;
         height: 20px;
         display: flex;
@@ -138,7 +142,6 @@ body{
         align-items: center;
         padding: 7px;
         color: rgb(255, 255, 255);
-        border: 2px ridge rgb(106, 179, 243);
         margin-top: 100px;
         margin-right: 10px;
         transition: 0.8s;
@@ -147,7 +150,7 @@ body{
         font-size: 10pt;
         position: absolute;
         right: 0;
-        background-image: linear-gradient(40deg,#58787a6b,#54B4BD,#23E8FA);
+        background-color: #5ac8f3;
         border-radius: 10px;
         height: 20px;
         display: flex;
@@ -155,13 +158,12 @@ body{
         align-items: center;
         padding: 7px;
         color: rgb(255, 255, 255);
-        border: 2px ridge rgb(102, 176, 241);
         margin-top: 100px;
         margin-right: 80px;
         transition: 0.8s;
     }
     #signin:hover, #signup:hover{
-        background-color: rgb(240, 248, 255);
+        background-color: #2d91de;
         cursor: pointer;
         transition: 0.8s;
     }
@@ -169,15 +171,16 @@ body{
         width: 90px;
         height: 90px;
         background-color: lightgray;
-        border-radius: 20%;
-        margin-top: 20px;
+        border-radius: 100%;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.299);
+        margin: 20px;
     }
     .refs{
         position: absolute;
         list-style: none;
         display: inline-flex;
         margin-top: 120px;
-        margin-left: 70px;
+        margin-left: 100px;
         left: 0;
     }
     .refs>li{
@@ -187,7 +190,7 @@ body{
         transition: 0.5s;
     }
     .refs>li:hover{
-        background-color: rgba(240, 248, 255, 0.308);
+        background-color: #2d91de;
         transition: 0.5s;
         border-radius: 5px;
         padding: 3px;
@@ -226,7 +229,7 @@ body{
         display: flex;
         flex-wrap: wrap;
         width: 100%-20px;
-        background-color: #54B4BD;
+        background-color: #16B4F2;
     }
     main p, h1{
         color: black;
@@ -241,7 +244,7 @@ body{
     footer{
         height: 200px;
         padding: 20px;
-        background-color: #54B4BD;
+        background-color: #16B4F2;
         display: flex;
     }
     footer>.detalhes{
@@ -280,20 +283,16 @@ body{
         border-radius: 50%;
     }
     footer .direitos{
-        width: 200px;
+        width: 220px;
         height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: rgba(54, 54, 54, 0.353);
         padding: 10px;
-        border-radius: 15px;
-        border: 2px ridge rgba(25, 25, 112, 0.435);
-        box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.378);
     }
     .direitos p{
-        font-size: 17pt;
-        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.464);
+        font-size: 12pt;
     }
     footer #redes{
         display: flex;
